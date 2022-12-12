@@ -10,6 +10,15 @@ public class Courses {
     public String title;
     public String description;
     public String courseName;
+    public  String chapterName;
+
+    public String getChapterName() {
+        return chapterName;
+    }
+
+    public void setChapterName(String chapterName) {
+        this.chapterName = chapterName;
+    }
 
     public String getCourseName() {
         return courseName;
@@ -22,9 +31,6 @@ public class Courses {
     public Courses(String courseName) {
         this.courseName = courseName;
     }
-
-
-
 
     public long getId() {
         return id;
