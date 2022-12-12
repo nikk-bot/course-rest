@@ -9,6 +9,21 @@ public class Courses {
     public long id;
     public String title;
     public String description;
+    public String courseName;
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public Courses(String courseName) {
+        this.courseName = courseName;
+    }
+
+
 
 
     public long getId() {
