@@ -2,16 +2,17 @@ package com.spring.restapi.restapi.controller;
 
 import com.spring.restapi.restapi.entity.Courses;
 import com.spring.restapi.restapi.service.CourseService;
+import com.spring.restapi.restapi.service.CourseServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@RestController
 public class CourseController {
     @Autowired
- public CourseService courseService;
+ public CourseServiceImpl courseService;
 
     @GetMapping("/courses")
     public List<Courses> getCourses(){
