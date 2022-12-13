@@ -73,6 +73,8 @@ public class Courses {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
+                ", courseName='" + courseName + '\'' +
+                ", chapterName='" + chapterName + '\'' +
                 '}';
     }
 }
