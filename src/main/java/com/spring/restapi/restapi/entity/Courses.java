@@ -3,7 +3,7 @@ package com.spring.restapi.restapi.entity;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity
+@Entity(name="courses")
 public class Courses {
     @Id
     public long id;
@@ -64,7 +64,6 @@ public class Courses {
     }
 
     public Courses(){
-        super();
     }
 
     @Override
